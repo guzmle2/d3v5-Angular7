@@ -4,7 +4,7 @@
   "author": "Leonor Guzman <guzmle2@gmail.com>",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "npm install && npm run build --prod && node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
