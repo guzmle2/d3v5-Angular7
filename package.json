@@ -1,6 +1,6 @@
 {
   "name": "d3v5-angular7",
-  "version": "1",
+  "version": "1.0.0",
   "author": "Leonor Guzman <guzmle2@gmail.com>",
   "scripts": {
     "ng": "ng",
