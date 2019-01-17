@@ -1,0 +1,268 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.line_bar {
+  //background: grey;
+  margin: auto;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bar {
+    fill: #80cbc4;
+  }
+
+  text {
+    font-size: 12px;
+    //fill: #fff;
+  }
+
+  path {
+    stroke: gray;
+  }
+
+  line {
+    stroke: gray;
+
+    &#limit {
+      stroke: #FED966;
+      stroke-width: 3;
+      stroke-dasharray: 3 6;
+    }
+  }
+
+  .grid {
+    path {
+      stroke-width: 0;
+    }
+
+    .tick line {
+      stroke: #9FAAAE;
+      stroke-opacity: 0.3;
+    }
+  }
+
+  text {
+    &.divergence {
+      font-size: 12px;
+      fill: #2F4A6D;
+    }
+
+    &.value {
+      font-size: 12px;
+    }
+
+    &.title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    &.label {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    &.source {
+      font-size: 10px;
+    }
+  }
+}
+
+.bullet {
+  font: 10px sans-serif;
+
+  .marker {
+    stroke: #000;
+    stroke-width: 2px;
+  }
+
+  .tick line {
+    stroke: #666;
+    stroke-width: .5px;
+  }
+
+  .range {
+    &.s0 {
+      fill: #eee;
+    }
+
+    &.s1 {
+      fill: #ddd;
+    }
+
+    &.s2 {
+      fill: #ccc;
+    }
+  }
+
+  .measure {
+    &.s0 {
+      fill: lightsteelblue;
+    }
+
+    &.s1 {
+      fill: steelblue;
+    }
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    fill: #999;
+  }
+
+  .measure-label tspan {
+    fill: white;
+    font-weight: bold;
+  }
+}
+
+.bar {
+  fill: steelblue;
+}
+
+
+.line-graph {
+  .line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+  }
+
+  .overlay {
+    fill: none;
+    pointer-events: all;
+  }
+
+  /* Style the dots by assigning a fill and stroke */
+  .dot {
+    fill: #ffab00;
+    stroke: #fff;
+  }
+
+  .focus circle {
+    fill: none;
+    stroke: steelblue;
+  }
+}
+
+
+.area {
+  svg {
+    pointer-events: all;
+
+    rect {
+      visibility: hidden;
+    }
+
+    .area {
+      stroke-width: 0;
+      cursor: pointer;
+    }
+
+    .circle-marker {
+      fill: #495057;
+      stroke: #fff;
+      stroke-width: 2px;
+    }
+
+    .vertical-line {
+      pointer-events: none;
+      stroke: #ced4da;
+    }
+
+    .type-A {
+      fill: red;
+    }
+
+    .type-B {
+      fill: blue;
+    }
+
+    .type-C {
+      fill: green;
+    }
+
+    .type-D {
+      fill: olive;
+    }
+
+    .type-E {
+      fill: aliceblue;
+    }
+
+    .type-F {
+      fill: salmon;
+    }
+
+    .type-G {
+      fill: hotpink;
+    }
+
+    .type-H {
+      fill: yellow;
+    }
+
+    .type-I {
+      fill: maroon;
+    }
+
+    .type-J {
+      fill: aquamarine;
+    }
+  }
+
+}
+
+.graph-map {
+  path {
+    fill: lightgray;
+    stroke: #000;
+  }
+
+  .graticule {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: .5px;
+  }
+
+  .foreground {
+    fill: none;
+    stroke: #333;
+    stroke-width: 1.5px;
+  }
+
+  .tooltip {
+    background: #333333;
+    opacity: 0.7;
+    border-radius: 10px;
+    position: absolute;
+    color: white;
+    padding: 10px !important;
+  }
+}
+
+.pie-chart{
+  #chart-area svg {
+    margin:auto;
+    display:inherit;
+  }
+  text {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}
+
+.btn, .btn-small{
+  margin-left: 5px !important;
+}

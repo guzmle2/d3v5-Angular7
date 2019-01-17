@@ -1,0 +1,7 @@
+export enum TYPE_GRAPH {
+  BAR_VERTICAL,
+  BAR_HORIZONTAL,
+  BULLET,
+  AREA,
+  LINE
+}

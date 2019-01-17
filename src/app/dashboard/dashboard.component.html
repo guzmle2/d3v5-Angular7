@@ -1,0 +1,41 @@
+<div class="row">
+  <div ibitsMapGraph
+       [data]="dataMap"
+       [textTooltip]="'ip'"
+       [keyLatitud]="'lat'"
+       [keyLongitude]="'long'"
+       class="col s12" style="height: 400px">
+  </div>
+</div>
+<div class="row">
+
+  <div ibitsBarVertical
+       *ngIf="dataPie && dataPie.length"
+       [data]="dataPie"
+       [value]="'value'"
+       [key]="'label'"
+       style="height: 400px"
+       class="col m6 s12">
+  </div>
+  <div class="col m6 s12">
+    Filter by:
+    <a class="waves-effect waves-light btn-small"
+       (click)="loadPie(dataOrigin, 'category')">Category
+    </a>
+    <a class="waves-effect waves-light btn-small"
+       (click)="loadPie(dataOrigin, 'type')">Type
+    </a>
+    <a class="waves-effect waves-light btn-small"
+       (click)="loadPie(dataOrigin, 'ioc_type')">ioc_type
+    </a>
+
+    <div ibitsPieChart
+         *ngIf="dataPie && dataPie.length"
+         [data]="dataPie"
+         [value]="'value'"
+         [key]="'label'"
+         style="height: 400px">
+    </div>
+  </div>
+
+</div>
